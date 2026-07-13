@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study in Japan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Study in Japan home">
+          <img class="brand-logo" src="images/logo-navbar.png" alt="Study in Japan - Discover your future" />
+        </a>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a class="active" href="index.html">Home</a>
+          <a href="schools.html">Schools</a>
+          <a href="#contact">Contact</a>
+          <div class="language-switch" aria-label="Language">
+            <button type="button" data-language="en" aria-pressed="false">EN</button>
+            <button type="button" data-language="ja" aria-pressed="false">日本語</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+          <div class="hero-copy">
+            <h1 data-i18n="heroTitle">Find Your Future in Japan</h1>
+            <p data-i18n="heroText">Search and explore universities and colleges across Japan.</p>
+            <form class="search-form" id="search-form" role="search">
+              <label class="sr-only" for="search-input" data-i18n="searchSchools">Search schools</label>
+              <input id="search-input" type="search" placeholder="Search by school name, city or keyword..." data-i18n-placeholder="searchPlaceholder" />
+              <button type="submit" aria-label="Search" data-i18n-label="searchSchools">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m21 21-4.8-4.8m2.2-5.2a7.4 7.4 0 1 1-14.8 0 7.4 7.4 0 0 1 14.8 0Z" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="filters-section container" aria-label="Institution filters">
+        <form class="filter-panel" id="filter-form">
+          <label>
+            <span data-i18n="type">Type</span>
+            <select name="type">
+              <option value="" data-i18n="all">All</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="ownership">Ownership</span>
+            <select name="ownership">
+              <option value="" data-i18n="all">All</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="prefecture">Prefecture</span>
+            <select name="prefecture">
+              <option value="" data-i18n="all">All</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="englishProgram">English Program</span>
+            <select name="english_program">
+              <option value="" data-i18n="all">All</option>
+              <option value="Yes" data-i18n="yes">Yes</option>
+              <option value="No" data-i18n="no">No</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="scholarship">Scholarship</span>
+            <select name="scholarship">
+              <option value="" data-i18n="all">All</option>
+              <option value="Yes" data-i18n="yes">Yes</option>
+              <option value="No" data-i18n="no">No</option>
+            </select>
+          </label>
+          <button class="reset-button" id="reset-filters" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 12a9 9 0 1 0 3-6.7M3 4v6h6" />
+            </svg>
+            <span data-i18n="resetFilters">Reset Filters</span>
+          </button>
+        </form>
+      </section>
+
+      <section class="stats-section container" aria-label="Statistics">
+        <article class="stat-card">
+          <span class="stat-icon" aria-hidden="true">
+            <svg class="lucide lucide-graduation-cap" viewBox="0 0 24 24">
+              <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+              <path d="M22 10v6" />
+              <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+            </svg>
+          </span>
+          <div><strong id="stat-institutions">0</strong><small data-i18n="institutionsLabel">Universities & Colleges</small></div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon" aria-hidden="true">
+            <svg class="lucide lucide-map-pin" viewBox="0 0 24 24">
+              <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </span>
+          <div><strong id="stat-prefectures">0</strong><small data-i18n="prefecturesLabel">Prefectures</small></div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon" aria-hidden="true">
+            <svg class="lucide lucide-book-open" viewBox="0 0 24 24">
+              <path d="M12 7v14" />
+              <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
+            </svg>
+          </span>
+          <div><strong id="stat-programs">0</strong><small data-i18n="programsLabel">Academic Programs</small></div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon" aria-hidden="true">
+            <svg class="lucide lucide-globe" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M3 12h18" />
+              <path d="M12 3a13.5 13.5 0 0 1 0 18 13.5 13.5 0 0 1 0-18" />
+            </svg>
+          </span>
+          <div><strong id="stat-english-programs">0</strong><small data-i18n="englishProgramsLabel">English Programs</small></div>
+        </article>
+      </section>
+
+      <section class="schools-section container" id="schools">
+        <div class="section-heading">
+          <div>
+            <h2 data-i18n="popularSchools">Popular Schools</h2>
+            <p id="results-count" data-i18n="loadingInstitutions">Loading institutions...</p>
+          </div>
+          <a href="schools.html" data-i18n="viewAllSchools">View All Schools &rarr;</a>
+        </div>
+        <div class="school-grid" id="institution-list" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="brand footer-logo">
+            <img class="brand-logo footer-logo-image" src="images/logo-white.png" alt="Study in Japan - Discover your future" />
+          </div>
+        </div>
+        <address class="footer-contact">
+          <a href="mailto:info@studyinjapan.jp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z" /><path d="m4 7 8 6 8-6" /></svg>
+            info@studyinjapan.jp
+          </a>
+          <a href="tel:+81312345678">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2.1Z" /></svg>
+            +81 3-1234-5678
+          </a>
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-5.5 10.2-7.4 11.8a1 1 0 0 1-1.2 0C9.5 20.2 4 15 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
+            Tokyo, Japan
+          </span>
+        </address>
+      </div>
+    </footer>
+
+    <script src="js/language.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

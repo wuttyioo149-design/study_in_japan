@@ -1,0 +1,27 @@
+﻿major_id,institution_id,major_name_en,major_name_ja,study_level_en,study_level_ja,language_en,language_ja,open_campus_date
+M0001,1,Information Technology,情報技術,Diploma,専門課程,Japanese,日本語,2026-07-18
+M0002,1,Computer Science,コンピュータサイエンス,Diploma,専門課程,Japanese,日本語,2026-07-25
+M0003,1,Game Development,ゲーム開発,Diploma,専門課程,Japanese,日本語,2026-08-01
+M0004,1,Graphic Design,グラフィックデザイン,Diploma,専門課程,Japanese,日本語,2026-08-02
+M0005,1,Digital Design,デジタルデザイン,Diploma,専門課程,Japanese,日本語,2026-08-08
+M0006,1,Information Technology,情報技術,Diploma,専門課程,Japanese,日本語,2026-08-16
+M0007,1,Computer Science,コンピュータサイエンス,Diploma,専門課程,Japanese,日本語,2026-08-22
+M0008,2,Automotive Engineering,自動車工学,Diploma,専門課程,Japanese,日本語,2026-07-23
+M0009,2,Engineering,工学,Diploma,専門課程,Japanese,日本語,2026-07-25
+M0018,3,Information Technology,情報技術,Diploma,専門課程,Japanese,日本語,2026-07-25
+M0019,3,Computer Science,コンピュータサイエンス,Diploma,専門課程,Japanese,日本語,2026-07-26
+M0020,4,Social Welfare,社会福祉,Diploma,専門課程,Japanese,日本語,2026-07-18
+M0021,4,Education,教育学,Diploma,専門課程,Japanese,日本語,2026-08-01
+M0028,5,Science,理学,Bachelor,学士課程,Japanese / English,日本語 / 英語,2026-08-06
+M0029,5,Education,教育学,Bachelor,学士課程,Japanese / English,日本語 / 英語,2026-08-07
+M0030,6,Health Sciences,健康科学,Bachelor,学士課程,Japanese / English,日本語 / 英語,2026-08-04
+M0031,6,Engineering,工学,Bachelor,学士課程,Japanese / English,日本語 / 英語,2026-08-07
+M0032,6,Science,理学,Bachelor,学士課程,Japanese / English,日本語 / 英語,2026-08-08
+M0033,6,Humanities,人文学,Bachelor,学士課程,Japanese / English,日本語 / 英語,2026-08-11
+M0034,6,Health Sciences,健康科学,Bachelor,学士課程,Japanese / English,日本語 / 英語,2026-08-18 ※学部により異なる
+M0035,7,Science,理学,Bachelor,学士課程,Japanese / English,日本語 / 英語,2026-08-07
+M0036,7,Humanities,人文学,Bachelor,学士課程,Japanese / English,日本語 / 英語,2026-08-10 ※学部により異なる
+M0037,8,Science,理学,Bachelor,学士課程,Japanese / English,日本語 / 英語,2026-08-06
+M0045,9,International Studies,国際学,Bachelor,学士課程,Japanese / English,日本語 / 英語,2026-07-25
+M0047,9,International Studies,国際学,Bachelor,学士課程,Japanese / English,日本語 / 英語,2026-08-01
+M0049,10,General Studies,総合学,Bachelor,学士課程,Japanese / English,日本語 / 英語,2026-08-01
